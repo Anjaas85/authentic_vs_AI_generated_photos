@@ -10,7 +10,7 @@ def create_densenet(num_classes=2):
     densenet.classifier = nn.Sequential(
         nn.Linear(num_features, 256),
         nn.ReLU(),
-        nn.Dropout(0.4),
+        nn.Dropout(0.3),
         nn.Linear(256, num_classes),
         nn.Softmax(dim=1)
     )

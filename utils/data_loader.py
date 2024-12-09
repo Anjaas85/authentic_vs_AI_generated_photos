@@ -27,7 +27,7 @@ def create_dataloaders(data_dir, batch_size=32):
     dataloaders = {'train': train_loader, 'val': val_loader}
     return dataloaders
 
-def create_test_loader(test_split=0.2, batch_size=32):
+def create_test_loader(batch_size=32):
     test_transform = transforms.Compose([
         transforms.Resize((224, 224)),
         transforms.ToTensor(),
@@ -40,13 +40,8 @@ def create_test_loader(test_split=0.2, batch_size=32):
     # Simulate CIFAKE10 labels: Classes 0-4 are "authentic" (0), 5-9 are "AI-generated" (1)
     cifar_test.targets = [0 if label < 5 else 1 for label in cifar_test.targets]
 
-    # Subset the test set into 20% for testing
-    labels = np.array(cifar_test.targets)
-    indices = np.arange(len(labels))
-    _, test_indices = train_test_split(indices, test_size=test_split, stratify=labels, random_state=42)
-
-    test_subset = Subset(cifar_test, test_indices)
-    test_loader = DataLoader(test_subset, batch_size=batch_size, shuffle=False, num_workers=4)
+    # Use the full test dataset
+    test_loader = DataLoader(cifar_test, batch_size=batch_size, shuffle=False, num_workers=4)
 
     return test_loader
 
