@@ -1,0 +1,54 @@
+Phase: validation
+Classification Report:
+Class 0:
+  precision: 0.8930
+  recall: 0.9218
+  f1-score: 0.9072
+  support: 5000.0000
+Class 1:
+  precision: 0.9192
+  recall: 0.8896
+  f1-score: 0.9042
+  support: 5000.0000
+Class macro avg:
+  precision: 0.9061
+  recall: 0.9057
+  f1-score: 0.9057
+  support: 10000.0000
+Class weighted avg:
+  precision: 0.9061
+  recall: 0.9057
+  f1-score: 0.9057
+  support: 10000.0000
+
+Confusion Matrix:
+[[4609  391]
+ [ 552 4448]]
+==================================================
+Phase: test
+Classification Report:
+Class 0:
+  precision: 0.8870
+  recall: 0.9182
+  f1-score: 0.9023
+  support: 5000.0000
+Class 1:
+  precision: 0.9152
+  recall: 0.8830
+  f1-score: 0.8988
+  support: 5000.0000
+Class macro avg:
+  precision: 0.9011
+  recall: 0.9006
+  f1-score: 0.9006
+  support: 10000.0000
+Class weighted avg:
+  precision: 0.9011
+  recall: 0.9006
+  f1-score: 0.9006
+  support: 10000.0000
+
+Confusion Matrix:
+[[4591  409]
+ [ 585 4415]]
+==================================================
