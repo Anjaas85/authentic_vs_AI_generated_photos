@@ -1,54 +1,108 @@
 Phase: validation
 Classification Report:
 Class 0:
-  precision: 0.8639
-  recall: 0.8756
-  f1-score: 0.8697
+  precision: 0.7689
+  recall: 0.7792
+  f1-score: 0.7740
   support: 5000.0000
 Class 1:
-  precision: 0.8739
-  recall: 0.8620
-  f1-score: 0.8679
+  precision: 0.7762
+  recall: 0.7658
+  f1-score: 0.7710
   support: 5000.0000
 Class macro avg:
-  precision: 0.8689
-  recall: 0.8688
-  f1-score: 0.8688
+  precision: 0.7725
+  recall: 0.7725
+  f1-score: 0.7725
   support: 10000.0000
 Class weighted avg:
-  precision: 0.8689
-  recall: 0.8688
-  f1-score: 0.8688
+  precision: 0.7725
+  recall: 0.7725
+  f1-score: 0.7725
   support: 10000.0000
 
 Confusion Matrix:
-[[4378  622]
- [ 690 4310]]
+[[3896 1104]
+ [1171 3829]]
 ==================================================
 Phase: test
 Classification Report:
 Class 0:
-  precision: 0.8656
-  recall: 0.8724
-  f1-score: 0.8690
+  precision: 0.7660
+  recall: 0.7876
+  f1-score: 0.7766
   support: 5000.0000
 Class 1:
-  precision: 0.8714
-  recall: 0.8646
-  f1-score: 0.8680
+  precision: 0.7814
+  recall: 0.7594
+  f1-score: 0.7703
   support: 5000.0000
 Class macro avg:
-  precision: 0.8685
-  recall: 0.8685
-  f1-score: 0.8685
+  precision: 0.7737
+  recall: 0.7735
+  f1-score: 0.7735
   support: 10000.0000
 Class weighted avg:
-  precision: 0.8685
-  recall: 0.8685
-  f1-score: 0.8685
+  precision: 0.7737
+  recall: 0.7735
+  f1-score: 0.7735
   support: 10000.0000
 
 Confusion Matrix:
-[[4362  638]
- [ 677 4323]]
+[[3938 1062]
+ [1203 3797]]
+==================================================
+Phase: validation
+Classification Report:
+Class 0:
+  precision: 0.8546
+  recall: 0.9052
+  f1-score: 0.8792
+  support: 5000.0000
+Class 1:
+  precision: 0.8992
+  recall: 0.8460
+  f1-score: 0.8718
+  support: 5000.0000
+Class macro avg:
+  precision: 0.8769
+  recall: 0.8756
+  f1-score: 0.8755
+  support: 10000.0000
+Class weighted avg:
+  precision: 0.8769
+  recall: 0.8756
+  f1-score: 0.8755
+  support: 10000.0000
+
+Confusion Matrix:
+[[4526  474]
+ [ 770 4230]]
+==================================================
+Phase: test
+Classification Report:
+Class 0:
+  precision: 0.8543
+  recall: 0.9006
+  f1-score: 0.8768
+  support: 5000.0000
+Class 1:
+  precision: 0.8949
+  recall: 0.8464
+  f1-score: 0.8700
+  support: 5000.0000
+Class macro avg:
+  precision: 0.8746
+  recall: 0.8735
+  f1-score: 0.8734
+  support: 10000.0000
+Class weighted avg:
+  precision: 0.8746
+  recall: 0.8735
+  f1-score: 0.8734
+  support: 10000.0000
+
+Confusion Matrix:
+[[4503  497]
+ [ 768 4232]]
 ==================================================
