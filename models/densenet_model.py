@@ -10,8 +10,12 @@ def create_densenet(num_classes=2):
     densenet.classifier = nn.Sequential(
         nn.Linear(num_features, 256),
         nn.ReLU(),
-        nn.Dropout(0.4),
-        nn.Linear(256, num_classes),
-        nn.Softmax(dim=1)
+        nn.BatchNorm1d(256),  # Batch Normalization
+        nn.Dropout(0.3),
+        nn.Linear(256, 128),  # New layer added
+        nn.ReLU(),
+        nn.BatchNorm1d(128),  # Batch Normalization for the new layer
+        nn.Dropout(0.3),
+        nn.Linear(128, num_classes)  # Output layer
     )
     return densenet
