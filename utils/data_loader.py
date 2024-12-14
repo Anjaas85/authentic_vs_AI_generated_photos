@@ -11,6 +11,7 @@ def create_dataloaders(data_dir, batch_size=32):
             transforms.RandomHorizontalFlip(),
             transforms.RandomRotation(15),  # Added Augmentation
             transforms.ColorJitter(brightness=0.2, contrast=0.2),  # Added
+            # transforms.RandomResizedCrop(224, scale=(0.8, 1.0)),  # Additional augmentation
             transforms.ToTensor(),
             transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
         ]),

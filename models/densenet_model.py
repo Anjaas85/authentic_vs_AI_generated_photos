@@ -16,12 +16,12 @@ def create_densenet(num_classes=2):
         nn.Linear(256, 128),  # New layer added
         nn.ReLU(),
         nn.BatchNorm1d(128),  # Batch Normalization for the new layer
-        nn.Dropout(0.3),
+        nn.Dropout(0.2),
         
         nn.Linear(128, 64),  # Extra layer added
         nn.ReLU(),
         nn.BatchNorm1d(64),  # Batch Normalization for the extra layer
-        nn.Dropout(0.3),
+        nn.Dropout(0.2),
 
         nn.Linear(64, num_classes)  # Output layer
     )
